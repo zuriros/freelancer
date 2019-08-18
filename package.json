@@ -1,0 +1,22 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "* **Track:** _Common Core_\r * **Curso:** _Creando tu primer sitio web interactivo_\r * **Unidad:** _Maquetado web con HTML & CSS_",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuriros/freelancer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuriros/freelancer/issues"
+  },
+  "homepage": "https://github.com/zuriros/freelancer#readme"
+}
