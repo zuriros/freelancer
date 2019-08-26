@@ -115,7 +115,7 @@
      
    </div>
     </section>
-    <section class="container-fluid pt-5">
+    <section class="container-fluid py-5 mb-5">
       <div class="container">
        <div class="row">
         <div class="col ">
@@ -127,19 +127,90 @@
           <div class="col"><i class="fas fa-star fa-2x "></i></div>
           <div class="col-3 rounded px-0 border bg-dark"></div>
         </div>
-      <button>Send</button>
+      <form class="form1 text-left" data-toggle="validator" role="form" >
+        <div class="control-group first"> 
+          <div class="form-group ">
+           <input class="form-control" type="text" id="name" required="required" data-validation-required-message="Please enter your name" aria-invalid="false">
+           <label for="name" type="text">Name</label>
+           <p class="help-block ">
+             <ul role="alert">
+              <li class="text-danger">Please enter your name.</li>
+             </ul>
+           </p>          
+          </div>
+      </div>
+        <div class="control-group sec">
+            <div class="form-group ">
+                <input class="form-control" type="email" id="email" required="required"  aria-invalid="false">
+               <label for="email" type="email">Email Address</label>
+                <p class="help-block ">
+                  <ul role="alert">
+                   <li class="text-danger">Please enter your name.</li>
+                  </ul>
+                </p>          
+               </div>
+        </div>
+        <div class="control-group third">
+            <div class="form-group ">
+                <input class="form-control" type="tel" id="phone" required="required"  aria-invalid="false">
+               <label for="phone" type="tel">Phone Number</label>
+                <p class="help-block ">
+                  <ul role="alert">
+                   <li class="text-danger">Please enter your name.</li>
+                  </ul>
+                </p>          
+               </div>
+        </div>
+        <div class="control-group fourth pb-4">
+            <div class="form-group ">
+                <textarea class="form-control"  id="message" required="required"  aria-invalid="false"></textarea>
+               <label for="message" >Message</label>
+                <p class="help-block ">
+                  <ul role="alert">
+                   <li class="text-danger">Please enter your name.</li>
+                  </ul>
+                </p>          
+               </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-lg btn-warning py-3 px-4">Send</button>
+        </div>
+      </form>
+     
     </div>
     </section>
     </main>
 
-   <footer class="container">
-       <h2>LOCATION</h2>
-       <p>3481 Melrose Place</p>
-       <p>Beverly Hills, CA 90210</p>
-       <h1>AROUND THE WEB</h1>
-       <h1>ABOUT FREELANCER</h1>
-       <p>Freelance is a free to use, open source Booststrap theme created by Start Bootstrap.</p>
-       <p>Copyright Your Website 2019 </p>
+   <footer class="text-light text-center">
+     <section class="container-fluid bg-primary py-5">
+      <div class="container py-5">
+       <div class="row">
+        <div class="col-11 col-lg-3">
+          <h3>LOCATION</h3>
+          <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+        </div>
+        <div class="col-11 col-lg-4">
+          <h3>AROUND THE WEB</h3>
+          <a class="btn btn-outline-light rounded-circle btn-social  m-1" href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light rounded-circle btn-social  m-1" href="#"><i class="fab fa-fw fa-twitter"></i></a>
+          <a class="btn btn-outline-light rounded-circle btn-social  m-1" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light rounded-circle btn-social  m-1" href="#"><i class="fab fa-fw fa-dribbble"></i></a>
+          
+        </div>
+        <div class="col-10 col-lg-4">
+          <h3>ABOUT FREELANCER</h3>
+          <p>Freelance is a free to use, open source Booststrap theme created by Start Bootstrap.</p>
+        </div>
+        </div>
+       </div>
+      </section>
+      <section class="container-fluid bg-success ">
+          <div class="row text-center">
+            <div class="col py-4"> 
+              <p class="my-0 h6" >Copyright © Your Website 2019</p>
+            </div>
+         </div>
+      </section>
    </footer>
 
     <!-- Optional JavaScript -->

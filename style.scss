@@ -1,6 +1,7 @@
 $theme-colors:(
   "primary": #2c3e50,
-  "warning": #18bc9c
+  "warning": #18bc9c,
+  "success":#212529
 );
 $navbar-dark-hover-color:#18bc9c;
 $display4-size: 3.93rem;
@@ -8,6 +9,7 @@ $navbar-dark-color:white;
 $font-size-base: 1.05rem;
 $font-weight-bold: 900;
 $emphasized-link-hover-darken-percentage: 90%;
+$h6-font-size:0.8rem;
 
 @import "scss/bootstrap";
 .navbar {
@@ -23,29 +25,65 @@ $emphasized-link-hover-darken-percentage: 90%;
   .nav-item {
       margin: 0 0.7rem;
       font-size: $font-size-base
-  }
-    
+  }   
 }
 .container-fluid{
-  
   .display-4{
     font-family: 'Montserrat', sans-serif;
     font-weight: $font-weight-bold;
   }
   .px-0{
     width: 10px;
-    height: 10px;
-    
+    height: 10px; 
   }
   .col-auto{
    color: white;
   }
-  
-    .about{
+    .about,.col-11 h3, .col-10 h3{
       font-family: 'Montserrat', sans-serif;
     }
-    .lead, .btn-lg{
+    .lead, .btn-lg, .col-11 p, .col-10 p, .col p{
       font-family: 'Lato', sans-serif;
     }
-   
+.form1{
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  .first, .sec, .third, .fourth{
+  label{
+    position: absolute;
+    top: 0.6rem;
+    left: 1rem;
+    transition: all 0.4s linear;
+  }
+  :focus + label{
+    color: #18bc9c;
+    top: -35px;
+    padding: 0 2px;
+  }
+ }
+ .sec{
+  label{
+    top: 6.7rem; 
+  }
+  :focus + label{
+    top: 4rem;
+  }
+ }
+ .third{
+   label{
+    top: 12.7rem; 
+   }
+   :focus + label{
+    top: 10rem;
+   }
+ }
+ .fourth{
+   label{
+    top: 18.7rem; 
+    }
+   :focus + label{
+     top: 16rem;
+   }
+  }
+ }
 }
