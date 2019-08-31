@@ -7,39 +7,62 @@ $navbar-dark-hover-color:#18bc9c;
 $display4-size: 3.93rem;
 $navbar-dark-color:white;
 $font-size-base: 1.05rem;
-$font-weight-bold: 900;
 $emphasized-link-hover-darken-percentage: 90%;
 $h6-font-size:0.8rem;
+$navbar-toggler-font-size:0.79rem;
+$navbar-toggler-padding-y:0.76rem;
+$navbar-toggler-border-radius:0.45rem;
 
 @import "scss/bootstrap";
 .navbar {
     padding: 27px 10px;
     font-family: 'Lato', sans-serif;
     font-weight: $font-weight-bold;
+    -webkit-transition: width .5s, height .5s, margin-right .5s;
 
   .navbar-brand{
+    -webkit-transition: font-size .3s;
     font-size: 1.7rem;
     letter-spacing: 1.5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif ;
   } 
+  .navbar-toggler, .navbar-brand{
+    font-family: 'Montserrat', sans-serif ;
+  }
   .nav-item {
       margin: 0 0.7rem;
       font-size: $font-size-base
   }   
 }
 .container-fluid{
-  .display-4{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: $font-weight-bold;
+  .h1Font{
+    font-size: 2.75rem;
   }
+  .line-divider {
+    width: 100%;
+    max-width: 7rem; 
+    height: .25rem;
+    border-radius: 1rem;
+    border-color: #2c3e50!important;
+}
+ .startPrim{
+   color: #2c3e50;
+ }
+ .item-content{
+   opacity: 0;
+ }
+ .item-content:hover{
+   opacity: 0.9;
+   cursor: pointer;
+ }
   .px-0{
     width: 10px;
     height: 10px; 
   }
-  .col-auto{
+  .col-auto, .start{
    color: white;
   }
-    .about,.col-11 h3, .col-10 h3{
+    .about,.col-11 h3, .col-10 h3, .h1Font, .h1Title{
       font-family: 'Montserrat', sans-serif;
     }
     .lead, .btn-lg, .col-11 p, .col-10 p, .col p{

@@ -114,7 +114,7 @@ ul ol {
 }
 
 dt {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 dd {
@@ -517,7 +517,7 @@ kbd {
 kbd kbd {
   padding: 0;
   font-size: 100%;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 pre {
@@ -3817,12 +3817,12 @@ input[type=button].btn-block {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.3125rem;
+  padding: 0.76rem 0.75rem;
+  font-size: 0.79rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 0.45rem;
 }
 .navbar-toggler:hover, .navbar-toggler:focus {
   text-decoration: none;
@@ -4411,7 +4411,7 @@ input[type=button].btn-block {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -4578,7 +4578,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-link {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .alert-dismissible {
@@ -5026,7 +5026,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .close {
   float: right;
   font-size: 1.575rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -9437,7 +9437,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-bold {
-  font-weight: 900 !important;
+  font-weight: 700 !important;
 }
 
 .font-weight-bolder {
@@ -9658,11 +9658,16 @@ h3 {
 .navbar {
   padding: 27px 10px;
   font-family: "Lato", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
+  -webkit-transition: width 0.5s, height 0.5s, margin-right 0.5s;
 }
 .navbar .navbar-brand {
+  -webkit-transition: font-size 0.3s;
   font-size: 1.7rem;
   letter-spacing: 1.5px;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar .navbar-toggler, .navbar .navbar-brand {
   font-family: "Montserrat", sans-serif;
 }
 .navbar .nav-item {
@@ -9670,18 +9675,34 @@ h3 {
   font-size: 1.05rem;
 }
 
-.container-fluid .display-4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+.container-fluid .h1Font {
+  font-size: 2.75rem;
+}
+.container-fluid .line-divider {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  border-color: #2c3e50 !important;
+}
+.container-fluid .startPrim {
+  color: #2c3e50;
+}
+.container-fluid .item-content {
+  opacity: 0;
+}
+.container-fluid .item-content:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
 .container-fluid .px-0 {
   width: 10px;
   height: 10px;
 }
-.container-fluid .col-auto {
+.container-fluid .col-auto, .container-fluid .start {
   color: white;
 }
-.container-fluid .about, .container-fluid .col-11 h3, .container-fluid .col-10 h3 {
+.container-fluid .about, .container-fluid .col-11 h3, .container-fluid .col-10 h3, .container-fluid .h1Font, .container-fluid .h1Title {
   font-family: "Montserrat", sans-serif;
 }
 .container-fluid .lead, .container-fluid .btn-lg, .container-fluid .btn-group-lg > .btn, .container-fluid .col-11 p, .container-fluid .col-10 p, .container-fluid .col p {
