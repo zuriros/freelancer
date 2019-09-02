@@ -1,0 +1,1 @@
+bootstrapValidate('#inputName', 'required:Please fill out this field!');
