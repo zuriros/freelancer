@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/zuriros/freelancer/issues"
   },
-  "homepage": "https://github.com/zuriros/freelancer#readme"
+  "homepage": "https://github.com/zuriros/freelancer#readme",
+  "dependencies": {
+    "bootstrap-validate": "^2.1.3"
+  }
 }

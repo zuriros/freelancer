@@ -9678,7 +9678,7 @@ h3 {
 .container-fluid .h1Font {
   font-size: 2.75rem;
 }
-.container-fluid .line-divider {
+.container-fluid .line-divider, .container-fluid .modal-line {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
@@ -9702,11 +9702,14 @@ h3 {
 .container-fluid .col-auto, .container-fluid .start {
   color: white;
 }
-.container-fluid .about, .container-fluid .col-11 h3, .container-fluid .col-10 h3, .container-fluid .h1Font, .container-fluid .h1Title {
+.container-fluid .about, .container-fluid .col-11 h3, .container-fluid .col-10 h3, .container-fluid .h1Font, .container-fluid .h1Title, .container-fluid .modal-title {
   font-family: "Montserrat", sans-serif;
 }
-.container-fluid .lead, .container-fluid .btn-lg, .container-fluid .btn-group-lg > .btn, .container-fluid .col-11 p, .container-fluid .col-10 p, .container-fluid .col p {
+.container-fluid .lead, .container-fluid .btn-lg, .container-fluid .btn-group-lg > .btn, .container-fluid .col-11 p, .container-fluid .col-10 p, .container-fluid .col p, .container-fluid .modal-text {
   font-family: "Lato", sans-serif;
+}
+.container-fluid .close {
+  color: #17a387;
 }
 .container-fluid .form1 {
   font-family: "Lato", sans-serif;

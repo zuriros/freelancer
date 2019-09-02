@@ -14,7 +14,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <header class="container-fluid  bg-primary sticky-top " >
+    <header class="container-fluid  bg-primary sticky-top" tabindex="-1">
       <nav class="container navbar navbar-expand-lg navbar-dark" id="nav">
         <a href="#secOne" class="navbar-brand">START BOOTSTRAP</a>
         <button class="navbar-toggler navbar-toggler-right bg-warning font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"  aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
   </nav>
     </header> 
 
-    <main class="text-center">
+    <main class="text-center" tabindex="-1">
       <section class="container-fluid bg-warning pb-5" id="secOne">
         <div class="container d-flex flex-column">
           <div class="row justify-content-around">
@@ -61,52 +61,201 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 ">
             <div class="item position-relative  my-4">
-            <div class="item-content d-flex align-items-center position-absolute justify-content-center bg-warning h-100 w-100">
+            <div class="item-content d-flex align-items-center position-absolute justify-content-center bg-warning h-100 w-100" data-toggle="modal" data-target="#firstModal">
               <div class="text-center text-white "><i class="fas fa-plus fa-4x"></i></div>
             </div>
             <span><img class="img-fluid rounded" src="./assets/images/portfolio/cabin.png" alt="Responsive image"></span>
         </div>
+        <!-- inicio del primer modal -->
+       <div class="modal fade py" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+         <div class="modal-content">
+           <button type="button" class="close d-flex justify-content-end pr-3 pt-3" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true"><i class="fas fa-times fa-2x"></i></span>
+           </button>
+         <div class="modal-body mx-3 pt-0">
+          <h2 class="modal-title text-primary font-weight-bold" id="exampleModalLongTitle">LOG CABIN</h2>
+          <div class="d-flex justify-content-center align-items-center my-4">
+              <div class="modal-line bg-primary"></div>
+              <div class="startPrim mx-3"><i class="fas fa-star fa-2x"></i></div>
+              <div class="modal-line bg-primary"></div>
+            </div>
+         <span><img class="img-fluid rounded mb-5 mt-1" src="./assets/images/portfolio/cabin.png" alt="Responsive image"></span>
+         <p class="modal-text h-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+      </div>
+      <div class="justify-content-center m-3 pb-5">
+        <button type="button" class="btn btn-secondary bg-warning" data-dismiss="modal"><span aria-hidden="true">
+          <i class="fas fa-times"></i></span> Close Windows</button>
+      </div>
+    </div>
+  </div>
+      </div>
+        <!-- final del primer modal -->
       </div>
         <div class="col-md-6 col-lg-4">
             <div class="item position-relative  my-4">
-                <div class="item-content d-flex  align-items-center position-absolute justify-content-center bg-warning h-100 w-100">
+                <div class="item-content d-flex  align-items-center position-absolute justify-content-center bg-warning h-100 w-100" data-toggle="modal" data-target="#secondModal">
                   <div class="text-center text-white "><i class="fas fa-plus fa-4x"></i></div>
                 </div>
                 <span><img class="img-fluid rounded" src="./assets/images/portfolio/cake.png" alt="Responsive image"></span>
             </div>
+             <!-- inicio del segundo modal -->
+       <div class="modal fade py" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+           <div class="modal-content">
+             <button type="button" class="close d-flex justify-content-end pr-3 pt-3" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true"><i class="fas fa-times fa-2x"></i></span>
+             </button>
+           <div class="modal-body mx-3 pt-0">
+            <h2 class="modal-title text-primary font-weight-bold" id="exampleModalLongTitle">TASTY CAKE</h2>
+            <div class="d-flex justify-content-center align-items-center my-4">
+                <div class="modal-line bg-primary"></div>
+                <div class="startPrim mx-3"><i class="fas fa-star fa-2x"></i></div>
+                <div class="modal-line bg-primary"></div>
+              </div>
+           <span><img class="img-fluid rounded mb-5 mt-1" src="./assets/images/portfolio/cake.png" alt="Responsive image"></span>
+           <p class="modal-text h-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+        </div>
+        <div class="justify-content-center m-3 pb-5">
+          <button type="button" class="btn btn-secondary bg-warning" data-dismiss="modal"><span aria-hidden="true">
+            <i class="fas fa-times"></i></span> Close Windows</button>
+        </div>
+      </div>
+    </div>
+        </div>
+          <!-- final del segundo modal -->
       </div>
         <div class="col-md-6 col-lg-4">
             <div class="item position-relative  my-4">
-                <div class="item-content d-flex align-items-center position-absolute justify-content-center bg-warning h-100 w-100">
+                <div class="item-content d-flex align-items-center position-absolute justify-content-center bg-warning h-100 w-100" data-toggle="modal" data-target="#thirdModal">
                   <div class="text-center text-white "><i class="fas fa-plus fa-4x"></i></div>
                 </div>
                 <span><img class="img-fluid rounded" src="./assets/images/portfolio/circus.png" alt="Responsive image"></span>
             </div>
+             <!-- inicio del tercer modal -->
+       <div class="modal fade py" id="thirdModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+           <div class="modal-content">
+             <button type="button" class="close d-flex justify-content-end pr-3 pt-3" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true"><i class="fas fa-times fa-2x"></i></span>
+             </button>
+           <div class="modal-body mx-3 pt-0">
+            <h2 class="modal-title text-primary font-weight-bold" id="exampleModalLongTitle">CIRCUS TENT</h2>
+            <div class="d-flex justify-content-center align-items-center my-4">
+                <div class="modal-line bg-primary"></div>
+                <div class="startPrim mx-3"><i class="fas fa-star fa-2x"></i></div>
+                <div class="modal-line bg-primary"></div>
+              </div>
+           <span><img class="img-fluid rounded mb-5 mt-1" src="./assets/images/portfolio/circus.png" alt="Responsive image"></span>
+           <p class="modal-text h-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+        </div>
+        <div class="justify-content-center m-3 pb-5">
+          <button type="button" class="btn btn-secondary bg-warning" data-dismiss="modal"><span aria-hidden="true">
+            <i class="fas fa-times"></i></span> Close Windows</button>
+        </div>
+      </div>
+    </div>
+        </div>
+          <!-- final del tercer modal -->
       </div>
         <div class="col-md-6 col-lg-4">
             <div class="item position-relative  my-4">
-                <div class="item-content d-flex align-items-center position-absolute justify-content-center bg-warning h-100 w-100">
+                <div class="item-content d-flex align-items-center position-absolute justify-content-center bg-warning h-100 w-100" data-toggle="modal" data-target="#fourthModal">
                   <div class="text-center text-white "><i class="fas fa-plus fa-4x"></i></div>
                 </div>
                 <span><img class="img-fluid rounded" src="./assets/images/portfolio/game.png" alt="Responsive image"></span>
             </div>
+             <!-- inicio del cuarto modal -->
+       <div class="modal fade py" id="fourthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+           <div class="modal-content">
+             <button type="button" class="close d-flex justify-content-end pr-3 pt-3" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true"><i class="fas fa-times fa-2x"></i></span>
+             </button>
+           <div class="modal-body mx-3 pt-0">
+            <h2 class="modal-title text-primary font-weight-bold" id="exampleModalLongTitle">CONTROLLER</h2>
+            <div class="d-flex justify-content-center align-items-center my-4">
+                <div class="modal-line bg-primary"></div>
+                <div class="startPrim mx-3"><i class="fas fa-star fa-2x"></i></div>
+                <div class="modal-line bg-primary"></div>
+              </div>
+           <span><img class="img-fluid rounded mb-5 mt-1" src="./assets/images/portfolio/game.png" alt="Responsive image"></span>
+           <p class="modal-text h-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+        </div>
+        <div class="justify-content-center m-3 pb-5">
+          <button type="button" class="btn btn-secondary bg-warning" data-dismiss="modal"><span aria-hidden="true">
+            <i class="fas fa-times"></i></span> Close Windows</button>
+        </div>
+      </div>
+    </div>
+        </div>
+          <!-- final del cuarto modal -->
       </div>
       <div class="col-md-6 col-lg-4">
           <div class="item position-relative  my-4">
-              <div class="item-content d-flex align-items-center position-absolute justify-content-center bg-warning h-100 w-100">
+              <div class="item-content d-flex align-items-center position-absolute justify-content-center bg-warning h-100 w-100" data-toggle="modal" data-target="#fifthModal">
                 <div class="text-center text-white "><i class="fas fa-plus fa-4x"></i></div>
               </div>
               <span><img class="img-fluid rounded" src="./assets/images/portfolio/safe.png" alt="Responsive image"></span>
           </div>
+           <!-- inicio del quinto modal -->
+       <div class="modal fade py" id="fifthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+           <div class="modal-content">
+             <button type="button" class="close d-flex justify-content-end pr-3 pt-3" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true"><i class="fas fa-times fa-2x"></i></span>
+             </button>
+           <div class="modal-body mx-3 pt-0">
+            <h2 class="modal-title text-primary font-weight-bold" id="exampleModalLongTitle">LOCKED SAFE</h2>
+            <div class="d-flex justify-content-center align-items-center my-4">
+                <div class="modal-line bg-primary"></div>
+                <div class="startPrim mx-3"><i class="fas fa-star fa-2x"></i></div>
+                <div class="modal-line bg-primary"></div>
+              </div>
+           <span><img class="img-fluid rounded mb-5 mt-1" src="./assets/images/portfolio/safe.png" alt="Responsive image"></span>
+           <p class="modal-text h-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+        </div>
+        <div class="justify-content-center m-3 pb-5">
+          <button type="button" class="btn btn-secondary bg-warning" data-dismiss="modal"><span aria-hidden="true">
+            <i class="fas fa-times"></i></span> Close Windows</button>
+        </div>
+      </div>
+    </div>
+        </div>
+          <!-- final del quinto modal -->
         </div>
         <div class="col-md-6 col-lg-4 pb-3">
             <div class="item position-relative  my-4">
-                <div class="item-content d-flex align-items-center position-absolute justify-content-center bg-warning h-100 w-100">
+                <div class="item-content d-flex align-items-center position-absolute justify-content-center bg-warning h-100 w-100" data-toggle="modal" data-target="#sixthModal">
                   <div class="text-center text-white "><i class="fas fa-plus fa-4x"></i></div>
                 </div>
                 <span><img class="img-fluid rounded" src="./assets/images/portfolio/submarine.png" alt="Responsive image"></span>
             </div>
-          
+            <!-- inicio del sexto modal -->
+       <div class="modal fade py" id="sixthModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+           <div class="modal-content">
+             <button type="button" class="close d-flex justify-content-end pr-3 pt-3" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true"><i class="fas fa-times fa-2x"></i></span>
+             </button>
+           <div class="modal-body mx-3 pt-0">
+            <h2 class="modal-title text-primary font-weight-bold" id="exampleModalLongTitle">SUBMARINE</h2>
+            <div class="d-flex justify-content-center align-items-center my-4">
+                <div class="modal-line bg-primary"></div>
+                <div class="startPrim mx-3"><i class="fas fa-star fa-2x"></i></div>
+                <div class="modal-line bg-primary"></div>
+              </div>
+           <span><img class="img-fluid rounded mb-5 mt-1" src="./assets/images/portfolio/submarine.png" alt="Responsive image"></span>
+           <p class="modal-text h-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+        </div>
+        <div class="justify-content-center m-3 pb-5">
+          <button type="button" class="btn btn-secondary bg-warning" data-dismiss="modal"><span aria-hidden="true">
+            <i class="fas fa-times"></i></span> Close Windows</button>
+        </div>
+      </div>
+    </div>
+        </div>
+          <!-- final del sexto modal -->
         </div>
         </div>
       </div>
@@ -160,15 +309,16 @@
       <form class="form1 text-left" data-toggle="validator" role="form" >
         <div class="control-group first"> 
           <div class="form-group ">
-           <input class="form-control" type="text" id="name" required="required" data-validation-required-message="Please enter your name" aria-invalid="false">
-           <label for="name" type="text">Name</label>
+           <input class="form-control is-valid" type="text" id="inputName" required="required" data-validation-required-message="Please enter your name" aria-invalid="false">
+           <label for="inputName" type="text">Name</label>
            <p class="help-block ">
              <ul role="alert">
-              <li class="text-danger">Please enter your name.</li>
+              <li class="valid-feedback">Please enter your name.</li>
              </ul>
            </p>          
           </div>
       </div>
+      
         <div class="control-group sec">
             <div class="form-group ">
                 <input class="form-control" type="email" id="email" required="required"  aria-invalid="false">
@@ -252,5 +402,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/popper.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap-validate/src/bootstrap-validate.js"></script>
   </body>
 </html>

@@ -38,7 +38,7 @@ $navbar-toggler-border-radius:0.45rem;
   .h1Font{
     font-size: 2.75rem;
   }
-  .line-divider {
+  .line-divider, .modal-line {
     width: 100%;
     max-width: 7rem; 
     height: .25rem;
@@ -62,12 +62,15 @@ $navbar-toggler-border-radius:0.45rem;
   .col-auto, .start{
    color: white;
   }
-    .about,.col-11 h3, .col-10 h3, .h1Font, .h1Title{
+    .about,.col-11 h3, .col-10 h3, .h1Font, .h1Title, .modal-title{
       font-family: 'Montserrat', sans-serif;
     }
-    .lead, .btn-lg, .col-11 p, .col-10 p, .col p{
+    .lead, .btn-lg, .col-11 p, .col-10 p, .col p, .modal-text{
       font-family: 'Lato', sans-serif;
     }
+.close{
+  color: #17a387;
+}
 .form1{
   font-family: 'Lato', sans-serif;
   position: relative;
