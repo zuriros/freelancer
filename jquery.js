@@ -8,8 +8,7 @@
 // });
 $(document).ready(() =>{
     
-    let windownWidth = $(window).width();
-    
+    let windownWidth = $(window).width();   
 // scroll de navbar 
    let scroll;
     $(window).scroll(() => {
@@ -26,9 +25,67 @@ $(document).ready(() =>{
             $("#nav").css({"margin-top":"0px", "height":"103.69px"})
         }}
     });
+  // Funcionalidad del label pero falta terminar
+  // la funcionalidad de los id paara que los input sean reconocidos por su cuenta
+
+//  function idInputLabel(inpName) {
+     
+//   $('input[id=inpName]').on('input', function(){
+//         let emptyInput = $(this).val();
+//         // console.log(emptyInput.length);   
+//        if(emptyInput.length === 0){
+//           $("label[id=uno]").hide();
+//        }else{
+//            $("label[id=uno]").show();
+//         }   
+//   });
+
+// }
 
 
-// crollTop por cada sección 
+//  $("button").click(function(){
+//     alert(($("input").val()).length);
+//   });
+// $("input").keypress(()=>{
+//      if ($("input").val().length < 0) {
+//         $("input").keyup(()=>{
+//             $("label").css({"display":"none"});
+//          })
+//      } else{
+//         $("input").keydown(()=>{
+//             $("label").css({"display":"block","transition": "all 0.5s linear"});
+//         });
+//      }
+//     })
+    
+
+    // $('input').on('input', function(){
+    //     $('input').each(function() {  
+    //         let empty = $(this).prop('value');
+    //     //   var boton      = $( '#user-data-next-button' );
+    //     // if (empty === '') {
+    //     //     $("label").hide();
+    //     // } 
+    //     // else{
+    //     //     $("input").keypress(()=>{
+    //     //         $("label").show(); 
+    //     //      })
+    //     // }
+    //     //   let empty = $(this).prop('value') === '';   
+    //     //   boton.prop('disabled', esta_vacio);    
+    //     console.log(empty);
+           
+    //     });
+    // });
+
+
+   
+    // let empty = $("#inputName").prop('value');
+    // console.log(empty);
+    
+ 
+
+// scrollTop por cada sección de la página 
     $('a').on("click",() => {
 
         if (this.hash !== "") {
@@ -44,4 +101,8 @@ $(document).ready(() =>{
     })
 
 });
+
+
+
+   
 

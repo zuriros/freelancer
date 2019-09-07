@@ -1,7 +1,8 @@
 $theme-colors:(
   "primary": #2c3e50,
   "warning": #18bc9c,
-  "success":#212529
+  "success": #212529,
+  "info": #e9ecef,
 );
 $navbar-dark-hover-color:#18bc9c;
 $display4-size: 3.93rem;
@@ -9,10 +10,13 @@ $navbar-dark-color:white;
 $font-size-base: 1.05rem;
 $emphasized-link-hover-darken-percentage: 90%;
 $h6-font-size:0.8rem;
+$h5-font-size:1.4rem;
 $navbar-toggler-font-size:0.79rem;
 $navbar-toggler-padding-y:0.76rem;
 $navbar-toggler-border-radius:0.45rem;
-
+$input-btn-focus-width:0;
+$input-btn-focus-color:none;
+$input-padding-y: 1.9rem;
 @import "scss/bootstrap";
 .navbar {
     padding: 27px 10px;
@@ -62,7 +66,7 @@ $navbar-toggler-border-radius:0.45rem;
   .col-auto, .start{
    color: white;
   }
-    .about,.col-11 h3, .col-10 h3, .h1Font, .h1Title, .modal-title{
+    .about,.col-11 h3, .col-10 h3, .h1Font, .h1Title, .modal-title, h5{
       font-family: 'Montserrat', sans-serif;
     }
     .lead, .btn-lg, .col-11 p, .col-10 p, .col p, .modal-text{
@@ -74,41 +78,48 @@ $navbar-toggler-border-radius:0.45rem;
 .form1{
   font-family: 'Lato', sans-serif;
   position: relative;
+  input,textarea{
+    font-size: 1.2rem;
+  }
+  textarea{
+    resize: none;
+  }
   .first, .sec, .third, .fourth{
   label{
+    display: none;
     position: absolute;
-    top: 0.6rem;
+    top: 0.1rem;
     left: 1rem;
-    transition: all 0.4s linear;
   }
   :focus + label{
     color: #18bc9c;
-    top: -35px;
+    top: -20px;
     padding: 0 2px;
+    transition: all 0.4s linear
   }
  }
  .sec{
   label{
-    top: 6.7rem; 
+    top: 3.4rem; 
   }
   :focus + label{
-    top: 4rem;
+    top: 2.3rem;
   }
  }
  .third{
    label{
-    top: 12.7rem; 
+    top: 6.9rem; 
    }
    :focus + label{
-    top: 10rem;
+    top: 5.8rem;
    }
  }
  .fourth{
    label{
-    top: 18.7rem; 
+    top: 10.3rem; 
     }
    :focus + label{
-     top: 16rem;
+     top: 9.3rem;
    }
   }
  }

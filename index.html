@@ -262,17 +262,14 @@
     </section>
     <section class="page container-fluid bg-warning py-5 mb-5" id="secThree">
       <div class="container">
-      <div class="row">
-      <div class="col text-light pt-5 pb-4">
-      <h1 class="about">ABOUT</h1>
+      <h2 class="about text-light font-weight-bold pt-5 pb-1">ABOUT</h2>
+      <!-- h2 class="h1Title text-primary font-weight-bold" -->
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="line-divider bg-light"></div>
+        <div class="start m-3"><i class="fas fa-star fa-2x"></i></div>
+        <div class="line-divider bg-light"></div>
       </div>
-    </div>
-      <div class=" row justify-content-around mb-3 ">
-          <div class="col-3 rounded w-0 px-0 border bg-light"></div>
-          <div class="col-auto"><i class="fas fa-star fa-2x "></i></div>
-          <div class="col-3 rounded px-0 border bg-light"></div>
-        </div>
-      <div class="row text-left text-light py-4">
+      <div class="row text-left text-light py-3">
         <div class="col-lg-4 ml-auto ">
          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap.The download includes
           the complete source files including HTML, CSS, and JavaScript as well as optional LESS
@@ -296,60 +293,44 @@
     </section>
     <section class="container-fluid py-5 mb-5" id="secFour">
       <div class="container">
-       <div class="row">
-        <div class="col ">
-          <h1>CONTACT ME</h1>
-       </div> 
-      </div>
-      <div class=" row justify-content-around my-4">
-          <div class="col-3 rounded w-0 px-0 border bg-dark"></div>
-          <div class="col"><i class="fas fa-star fa-2x "></i></div>
-          <div class="col-3 rounded px-0 border bg-dark"></div>
-        </div>
-      <form class="form1 text-left" data-toggle="validator" role="form" >
+
+       <h2 class="text-primary font-weight-bold">CONTACT ME</h2>
+       <div class="d-flex justify-content-center align-items-center">
+         <div class="line-divider bg-primary"></div>
+         <div class="startPrim m-3"><i class="fas fa-star fa-2x"></i></div>
+         <div class="line-divider bg-primary"></div>
+       </div>
+       
+      <form class="form1 text-left" data-toggle="validator" role="form" novalidate>
         <div class="control-group first"> 
-          <div class="form-group ">
-               
-           <input class="form-control is-valid" type="text" id="inputName" required="required" placeholder="Name" aria-invalid="false">
-           <label>Name</label>     
+          <div class="form-group border-bottom border-info">   
+           <input class="form-control border-0" type="text" id="inputName" required="required" placeholder="Name" aria-invalid="false">
+           <label class="h6" id="uno">Name</label>     
           </div>
       </div>
       
         <div class="control-group sec">
-            <div class="form-group ">
-                <input class="form-control" type="email" id="email" required="required"  aria-invalid="false">
-               <label for="email" type="email">Email Address</label>
-                <p class="help-block ">
-                  <ul role="alert">
-                   <li class="text-danger">Please enter your name.</li>
-                  </ul>
-                </p>          
+            <div class="form-group border-bottom border-info">
+               <input class="form-control border-0" type="email" id="inputEmail" required="required" placeholder="Email Address" aria-invalid="false">
+               <label class="h6"  type="email">Email Address</label>      
                </div>
         </div>
         <div class="control-group third">
-            <div class="form-group ">
-                <input class="form-control" type="tel" id="phone" required="required"  aria-invalid="false">
-               <label for="phone" type="tel">Phone Number</label>
-                <p class="help-block ">
-                  <ul role="alert">
-                   <li class="text-danger">Please enter your name.</li>
-                  </ul>
-                </p>          
+            <div class="form-group border-bottom border-info">
+                <input class="form-control border-0" type="tel" id="inputPhone" required="required"  placeholder="Phone Number" aria-invalid="false">
+               <label class="h6" type="tel">Phone Number</label>
+                  
                </div>
         </div>
         <div class="control-group fourth pb-4">
-            <div class="form-group ">
-                <textarea class="form-control"  id="message" required="required"  aria-invalid="false"></textarea>
-               <label for="message" >Message</label>
-                <p class="help-block ">
-                  <ul role="alert">
-                   <li class="text-danger">Please enter your name.</li>
-                  </ul>
-                </p>          
+            <div class="form-group border-bottom border-info">
+                <textarea class="form-control  border-0" id="message" required="required"  placeholder="Message" aria-invalid="false"></textarea>
+               <label class="h6" for="message">Message</label>
+                     
                </div>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-lg btn-warning py-3 px-4">Send</button>
+          <button type="submit" class="btn btn-lg btn-warning py-3 px-3">Send</button>
         </div>
       </form>
      
@@ -362,28 +343,28 @@
      <section class="container-fluid bg-primary py-5">
       <div class="container py-5">
        <div class="row">
-        <div class="col-11 col-lg-3">
-          <h3>LOCATION</h3>
-          <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+        <div class="col-11 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="font-weight-bold mb-4">LOCATION</h5>
+          <p>3481 Melrose Place Beverly <br> Hills, CA 90210</p>
         </div>
-        <div class="col-11 col-lg-4">
-          <h3>AROUND THE WEB</h3>
+        <div class="col-11 col-lg-4 mb-4 mb-lg-0">
+          <h5 class="font-weight-bold mb-4">AROUND THE WEB</h5>
           <a class="btn btn-outline-light rounded-circle btn-social  m-1" href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
           <a class="btn btn-outline-light rounded-circle btn-social  m-1" href="#"><i class="fab fa-fw fa-twitter"></i></a>
           <a class="btn btn-outline-light rounded-circle btn-social  m-1" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a>
           <a class="btn btn-outline-light rounded-circle btn-social  m-1" href="#"><i class="fab fa-fw fa-dribbble"></i></a>
           
         </div>
-        <div class="col-10 col-lg-4">
-          <h3>ABOUT FREELANCER</h3>
-          <p>Freelance is a free to use, open source Booststrap theme created by Start Bootstrap.</p>
+        <div class="col-11 col-lg-4 my-3 text-center">
+          <h5 class="font-weight-bold mb-4">ABOUT FREELANCER</h5>
+          <p>Freelance is a free to use, open source Booststrap theme created by <a  class="text-warning" href="http://startbootstrap.com"> Start Bootstrap </a>.</p>
         </div>
         </div>
        </div>
       </section>
       <section class="container-fluid bg-success ">
           <div class="row text-center">
-            <div class="col py-4"> 
+            <div class="col py-3"> 
               <p class="my-0 h6" >Copyright © Your Website 2019</p>
             </div>
          </div>
@@ -394,10 +375,11 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="bootstrap-4.3.1-dist/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="./jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/jquery.min.js"></script>
+    <script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="validate.js"></script>
+    <script src="jquery.js"></script>
     <script src="bootstrap-4.3.1-dist/js/popper.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/bootstrap-validate/src/bootstrap-validate.js"></script>
   </body>
 </html>
