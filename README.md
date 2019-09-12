@@ -1,6 +1,6 @@
 # Freelancer
 
-* **Track:** _Common Core_
+<!-- * **Track:** _Common Core_
 * **Curso:** _Creando tu primer sitio web interactivo_
 * **Unidad:** _Maquetado web con HTML & CSS_
 
@@ -20,7 +20,7 @@ estructura de carpetas y archivos donde colocarás tu código.
 
    ```bash
    git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
+   ``` -->
 
 ## Objetivo
 
@@ -29,7 +29,7 @@ a lograr:
 
 ![Freelancer Website](docs/fullpage.png)
 
-## Consideraciones
+<!-- ## Consideraciones
 
 * Encontrarás un archivo base `index.html` en el cual deberás escribir la
   estructura de tu proyecto y enlazar tus archivos de estilos (CSS).
@@ -67,7 +67,7 @@ a lograr:
 
   > Nota: El sitio original tiene ciertos efectos y funcionalidades que
 están fuera del alcance de este reto. Enfócate en obtener la maquetación
-lo más parecido posible, usando lo aprendido en clase ;)
+lo más parecido posible, usando lo aprendido en clase ;) -->
 
 ## A tener en cuenta
 
