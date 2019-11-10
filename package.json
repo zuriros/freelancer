@@ -16,9 +16,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zuriros/freelancer/issues"
+    "url": "https://zuriros.github.io/freelancer//issues"
   },
-  "homepage": "https://github.com/zuriros/freelancer#readme",
+  "homepage": "https://zuriros.github.io/freelancer#readme",
   "dependencies": {
     "bootstrap-validate": "^2.1.3",
     "jquery-validation": "^1.19.1"
