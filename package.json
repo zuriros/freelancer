@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://zuriros.github.io/freelancer"
+    "url": "git+https://github.com/zuriros/freelancer.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://zuriros.github.io/freelancer//issues"
+    "url": "https://github.com/zuriros/freelancer/issues"
   },
-  "homepage": "https://zuriros.github.io/freelancer#readme",
+  "homepage": "https://github.com/zuriros/freelancer#readme",
   "dependencies": {
     "bootstrap-validate": "^2.1.3",
     "jquery-validation": "^1.19.1"
